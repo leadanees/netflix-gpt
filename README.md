@@ -2,7 +2,12 @@
 -create-react-app
 -configured tailwindCss
 -Header
+-Routing of application
 -Login form
+-sign Up form
+-form validation
+-useRef
+
 
 
 # Features
