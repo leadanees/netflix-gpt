@@ -7,6 +7,14 @@
 -sign Up form
 -form validation
 -useRef
+-Firebase setup
+-Deploying our for production
+-Create Sign Up User Acount
+-Implement Sign In User Api 
+-Created Redux Store with userSlice
+-Implement Sign out page
+-Update Profile
+-Fetch Movies from TMDB movies
 
 
 

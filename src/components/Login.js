@@ -1,25 +1,72 @@
 import { useRef, useState } from "react";
 import Header from "./Header";
 import { CheckedData } from "../utils/Validation";
+import { createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../utils/firebase";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-
+  const navigate = useNavigate();
   const email = useRef(null);
   const password = useRef(null);
   const name = useRef(null);
 
+  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const massage = CheckedData(
+      email.current.value,
+      password.current.value,
+      //name.current.value
+    );
+    setErrorMessage(massage);
+    if (massage) return;
+    if (!isSignIn) {
+      createUserWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          // Signed up
+          const user = userCredential.user;
+          console.log(user);
+          setIsSignIn(!isSignIn);
+          navigate('/')
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMessage(errorCode + "-" + errorMessage);
+        });
+    } else {
+      signInWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          console.log(user);
+          navigate('/browse')
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMessage(errorCode + "-" + errorMessage);
+        });
+    }
+    
+  };
+
   const toggleForSignIn = () => {
     setIsSignIn(!isSignIn);
   };
-
-  
-  const validation = (e) => {
-    e.preventDefault();
-    let validate = CheckedData(email.current.value,password.current.value,name.current.value);
-    setErrorMessage(validate);
-  }
 
   return (
     <div>
@@ -32,7 +79,7 @@ const Login = () => {
       </div>
       <form
         // onSubmit={(e) => e.preventDefault()}
-        onSubmit={e => validation(e)}
+        onSubmit={(e) => handleSubmit(e)}
         action=""
         className="w-3/12 absolute p-12 bg-black my-40 mx-auto right-0 left-0 text-white opacity-75"
       >
