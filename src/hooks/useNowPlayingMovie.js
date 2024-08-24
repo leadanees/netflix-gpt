@@ -15,7 +15,6 @@ const useNowPlayingMovie = () => {
   const getNowPlayingMovies = () => {
     axios.get("https://api.themoviedb.org/3/movie/now_playing", API_OPTIONS).then((response) => {
         let result = response.data.results;
-        console.log(result);
         dispatch(addMovies(result));
       }).catch(err => console.log(err));
   };
