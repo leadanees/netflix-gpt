@@ -5,8 +5,16 @@ export const API_OPTIONS = {
     method:"GET",
     headers:{
         accept:"application/json",
-        Authorization:"Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhOGRlNjdjYTljZDVkOTEwMTc1YzhmNDQ2YjYwNjBkZiIsIm5iZiI6MTcyNDQwMTczNi4yNjcwMSwic3ViIjoiNjZjODM0NTI2MTMxMTJmZDViYjJmZWMwIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.hsEork33eDVQsfPudSDJEbVHYhaybST21HFPxDt5vRs"
+        Authorization:"Bearer "+process.env.REACT_APP_BEREAR_KEY,
     },
 };
 
 export const IMG_CDL_URL = "https://image.tmdb.org/t/p/w500"
+
+export const BG_IMG = "https://assets.nflxext.com/ffe/siteui/vlv3/b2c3e95b-b7b5-4bb7-a883-f4bfc7472fb7/19fc1a4c-82db-4481-ad08-3a1dffbb8c39/IN-en-20240805-POP_SIGNUP_TWO_WEEKS-perspective_WEB_24a485f6-1820-42be-9b60-1b066f1eb869_large.jpg";
+
+export const LANGUAGE = [
+    {identifier:"en",langName:"English"},
+    {identifier:"hindi",langName:"Hindi"},
+    {identifier:"arabic",langName:"Arabic"},
+]
