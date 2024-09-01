@@ -1,48 +1,54 @@
 export const movieTypeData = {
-  "Action":
+  Action:
     "Dangal, Baahubali: The Beginning, KGF: Chapter 1, War, Shershaah, Simmba, Singham, Bharat, Agneepath, URI: The Surgical Strike",
-  "Adventure":
+  Adventure:
     "Lagaan, Zindagi Na Milegi Dobara, Yeh Jawaani Hai Deewani, Dil Chahta Hai, Chanda Mama Door Ke, Krrish, Taare Zameen Par, Dhoom 2, Kabali, Makkhi",
-  "Comedy":
+  Comedy:
     "Hera Pheri, Golmaal, Housefull, Chupke Chupke, 3 Idiots, Andaz Apna Apna, Dhamaal, Munna Bhai M.B.B.S., Padosan, Bheja Fry",
-  "Funny":
+  Funny:
     "Hera Pheri, Golmaal, Housefull, Chupke Chupke, 3 Idiots, Andaz Apna Apna, Dhamaal, Munna Bhai M.B.B.S., Padosan, Bheja Fry",
-  
-    "Drama":
+  Best: "Sholay, Dilwale Dulhania Le Jayenge, Mughal-e-Azam, 3 Idiots, Lagaan, Pyaasa, Kabhi Khushi Kabhie Gham, Andaz Apna Apna, Taare Zameen Par, Barfi!",
+  Drama:
     "Kabhi Khushi Kabhie Gham, Lagaan, Barfi!, Paa, Taare Zameen Par, Kapoor & Sons, Chhichhore, The Lunchbox, Munna Bhai M.B.B.S., Swades",
-  "Horror":
+  Horror:
     "Bhool Bhulaiyaa, Stree, Raaz, 1920, Ragini MMS, Haunted 3D, Pari, Ghoul, The House Next Door, Bhoot",
-  "Thriller":
+  Thriller:
     "Kahaani, Talaash, Drishyam, Andhadhun, Wazir, Kaahani 2, Special 26, Raaz: The Mystery Continues, Mumbai Mirror, Raat",
-  "Romance":
+  Romance:
     "Dilwale Dulhania Le Jayenge, Kabir Singh, Hum Tum, Yeh Jawaani Hai Deewani, Kal Ho Na Ho, Jab We Met, Barfi!, 2 States, Veer-Zaara, Tanu Weds Manu",
-  "Documentary":
+  Documentary:
     "India: The Modi Question, The Great Indian Circus, Wild Karnataka, The Art of the Game, Fire in the Blood, The World Before Her, The Last Dance, The Kashmir Files, The Story of India, India: The Modi Question",
-  "Animation":
+  Animation:
     "Chhota Bheem and the Curse of Damyaan, Hanuman, Delhi Safari, Roadside Romeo, Shaktimaan: The Animated Series, Baahubali: The Lost Legends, Motu Patlu: King of the Hills, Ramayana: The Legend of Prince Rama, The Legend of Hanuman, Krish Trish and Baltiboy",
-  "Mystery":
+  Mystery:
     "Kahaani, Talaash, Drishyam, Badla, 7 Khoon Maaf, Ittefaq, Darr, The Great Indian Murder, Ajnabee, Murder",
-  "Historical":
+  Historical:
     "Lagaan, Jodhaa Akbar, Baahubali: The Beginning, Mangal Pandey: The Rising, Tumbbad, The Legend of Bhagat Singh, Gandhi, Veer-Zaara, Khelein Hum Jee Jaan Sey, Rang De Basanti",
-  "Crime":
+  Crime:
     "Gangs of Wasseypur, Satya, Sholay, D-Day, Mumbai Mafia: Police vs The Underworld, Talaash, Kaminey, Kaante, Special 26, Madras Cafe",
-  "Sports":
+  Sports:
     "Chakde! India, Dangal, Sultan, Lagaan, Mary Kom, Paan Singh Tomar, Bhaag Milkha Bhaag, Dil Dhadakne Do, Patiala House, Soorma",
+  Latest:
+    "Jawan, Gadar 2, Pathaan, Adipurush, Rocky Aur Rani Ki Prem Kahani, The Kerala Story, Zinda Banda, Fukrey 3, Mission Raniganj, Dussehra",
+    Sexy:"Hate Story, Jism, Murder, Kama Sutra: A Tale of Love, Emraan Hashmi's The Dirty Picture, Deshdrohi, Wajah Tum Ho, Raaz, Aashiqui 2, Baazigar",
 };
 
 export const genreKeywords = {
-    Action: ['action'],
-    Adventure: ['adventure'],
-    Comedy: ['comedy'],
-    Drama: ['drama'],
-    Horror: ['horror'],
-    Thriller: ['thriller'],
-    Romance: ['romance'],
-    Documentary: ['documentary'],
-    Animation: ['animation'],
-    Mystery: ['mystery'],
-    Historical: ['historical', 'history'],
-    Crime: ['crime'],
-    Sports: ['sports'],
-    Funny: ['funny'],
-  };
+  Action: ["action"],
+  Adventure: ["adventure"],
+  Comedy: ["comedy"],
+  Drama: ["drama"],
+  Horror: ["horror"],
+  Thriller: ["thriller"],
+  Romance: ["romance"],
+  Documentary: ["documentary"],
+  Animation: ["animation"],
+  Mystery: ["mystery"],
+  Historical: ["historical", "history"],
+  Crime: ["crime"],
+  Sports: ["sports"],
+  Funny: ["funny"],
+  Best: ["best"],
+  Lates: ["latest"],
+  Sexy:["sexy"]
+};

@@ -60,7 +60,7 @@ const GptSearchBar = () => {
         dispatch(addMovieList(tmdbResult));
       }
     } else {
-      setErrorMessage("Please Enter Correct Spelling!");
+      setErrorMessage("Please Enter Correct Spelling! Or It Should not be Empty");
       dispatch(addMovieList([]))
       dispatch(addMovieName([]))
     }
