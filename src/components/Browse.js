@@ -20,12 +20,12 @@ const Browse = () => {
     <div>
       <Header />
       {showget ? (
-        <GPTSearch />
-      ) : (
         <>
           <MainContainer />
           <SecondContainer />
         </>
+      ) : (
+        <GPTSearch />
       )}
     </div>
   );
